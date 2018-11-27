@@ -16,7 +16,7 @@ Ideally the emails should be deleted to clean up the space, but I'm running into
 
 Enable the Gmail Api through here: https://developers.google.com/gmail/api/quickstart/python
 
-Download the credentials.json file and put them in the root of gmail_cleaner.
+Download `credentials.json` and put them in the root of gmail_cleaner.
 
 # Running
 
