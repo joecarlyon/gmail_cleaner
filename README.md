@@ -20,4 +20,4 @@ Download `credentials.json` and put them in the root of gmail_cleaner.
 
 # Running
 
-`python3 get_emails.py`
+`python3 get_emails.py /path/to/save/directory`
