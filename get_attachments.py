@@ -44,7 +44,7 @@ def get_attachments(service, user_id, msg_id, save_path):
                 file_data = base64.urlsafe_b64decode(message['payload']['body']['data'].encode('UTF-8'))
                 path = ''.join([save_path, sanitize_string(message['snippet'][0:70])])
                 write_file_to_location(file_data, path)
-        elif 'part' in message['payload']['parts']:
+        elif 'parts' in message['payload']:
             for part in message['payload']['parts']:
                 print("Downloading multi-part attachment...")
                 if part['filename']:

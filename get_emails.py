@@ -24,7 +24,7 @@ def main():
     service = build('gmail', 'v1', http=creds.authorize(Http()))
 
     # Call the Gmail API
-    response = service.users().messages().list(userId='me', maxResults=500).execute()
+    response = service.users().messages().list(userId='me', q="has:attachment", maxResults=500).execute()
     messages = response['messages']
     messages_with_attachments = list()
 
