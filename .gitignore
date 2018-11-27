@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.venv/
+credentials.json
+token.json
+.idea/
+__pycache__
+venv
+lib
